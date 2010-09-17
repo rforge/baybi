@@ -43,17 +43,21 @@ stn.ratio=1
 theta<-optim(rep(0,3),optimfunc,method="BFGS")$par
 transpar<-c(theta[1],-100,theta[1]+log(stn.ratio),theta[2:3])
 
-transpar=c( -0.69,-100.0000000,-0.69,0.1157195,6.5472181)
 bi=baybiclust(julien[1:20,],transformed.par=transpar)
 
 plot(bi$rowtree)
 abline(h=bi$rowtree$cut)
 plot(bi$rowtree$clust.number,bi$rowtree$logposterior,type="b")
+abline(h=max(bi$rowtree$logposterior))
+viplot(bi$rowtree$imp,xlab=rownames(bi$data))
 
 
 plot(bi$coltree)
 abline(h=bi$coltree$cut)
 plot(bi$coltree$clust.number,bi$coltree$logposterior,type="b")
+abline(h=max(bi$coltree$logposterior))
+viplot(bi$coltree$imp,xlab=colnames(bi$data))
+
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
