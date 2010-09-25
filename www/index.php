@@ -43,10 +43,12 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-
-<p> 
-<img src="baybi.png" width="692" height="739" border="0" alt="">
+<p>
+<img src="gaellebi.png" width="771" height="583" border="0" alt="">
 </p>
+ 
+<!-- <img src="baybi.png" width="692" height="739" border="0" alt=""> -->
+
 <p>
 See the baybi website for more details. 
 </p>
