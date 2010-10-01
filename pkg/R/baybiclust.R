@@ -1,5 +1,25 @@
 baybiclust=function(x,x.id=1:nrow(x),transformed.par,row.labels=rownames(x),col.labels=colnames(x))
 {
+relabel<-function(current.label)
+{
+help.vec<-rep(NA,length(current.label))
+j<-1
+labelvalue<-current.label[1]
+help.vec [which(current.label==labelvalue)]<-j
+current.label[which(current.label==labelvalue)]<-0
+
+for (i in 2:length(current.label))
+        {
+        if ((current.label[i]!=labelvalue) & (current.label[i]!=0))
+                {
+                labelvalue<-current.label[i]
+                j<-j+1
+                help.vec [which(current.label==labelvalue)]<-j
+                current.label[which(current.label==labelvalue)]<-0
+                } 
+        }
+return(help.vec)
+}
 nocrossing.order<-function(mergemat)
 {
 	myorder<-matrix(NA,nrow(mergemat),nrow(mergemat)+1)
