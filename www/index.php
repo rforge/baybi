@@ -44,7 +44,8 @@ echo $contents; } ?>
 <!-- end of project description -->
 
 <p>
-<img src="gaellebi.png" width="771" height="583" border="0" alt="">
+<img src="baybi.png" width="346" height="369" alt="" />
+<img src="bidendro.jpg" width="447" height="381" alt="" />
 </p>
  
 <!-- <img src="baybi.png" width="692" height="739" border="0" alt=""> -->
