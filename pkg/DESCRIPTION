@@ -2,10 +2,10 @@ Package: baybi
 Type: Package
 Title: Bayesian Biclustering with Subject and Variable Importance
 Version: 1.0
-Date: 2010-09-01
+Date: 2014-11-05
 Author: Vahid PARTOVI NIA
 Maintainer: Vahid PARTOVI NIA <partovi@math.mcgill.ca>
-Depends: R (>= 2.10.1)
+Depends: R (>= 3.0.1)
 Suggests: bclust,labeltodendro
 Description: The package builds a dendrogram for subjects and variables with log posterior of a simple linear model. After data are grouped the Bayes Factor of a mixture versus a single component is given as an importance measure. Model hyperparameters are needed to be given or estimated from data to apply the algorithm.
 License:  GPL (>= 2)
